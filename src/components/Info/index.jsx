@@ -12,15 +12,15 @@ function Info() {
         <div className="input-box-c">
           <div>
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder="e.g. Yuval Harari" />
+            <input type="text" placeholder="e.g. Yuval Harari" required />
           </div>
           <div>
             <label htmlFor="name">Email Address</label>
-            <input type="text" placeholder="e.g. yuvalharari@noah.com" />
+            <input type="text" placeholder="e.g. yuvalharari@noah.com" required />
           </div>
           <div>
             <label htmlFor="name">Phone Number</label>
-            <input type="text" placeholder="e.g. +91 9220520220" />
+            <input type="text" placeholder="e.g. +91 9220520220" required />
           </div>
         </div>
 

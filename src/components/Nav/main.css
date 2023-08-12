@@ -1,0 +1,41 @@
+.nav {
+  width: 25%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background: url(../../assets/images/bg-sidebar-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  font-family: ubuntu-bold;
+  color: var(--White);
+  font-size: 16px;
+}
+
+.nav .nav-btn {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-btn > span {
+  /* background-color: var(--Light-blue); */
+  border: 2px solid var(--White);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  display: grid;
+  place-items: center;
+}
+
+.nav .step {
+    color: var(--Light-gray);
+}
+
+.nav .txt {
+  display: flex;
+  flex-direction: column;
+}

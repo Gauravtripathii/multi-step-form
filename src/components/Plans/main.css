@@ -1,0 +1,77 @@
+.plans-page {
+  color: var(--Marine-blue);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plans-page h1 {
+  font-family: ubuntu-bold;
+}
+
+.plans-page p {
+  color: var(--Cool-gray);
+  font-family: ubuntu-reg;
+}
+.plans-page > div {
+  height: 20%;
+}
+
+.plans-page .card-container {
+  display: flex;
+}
+
+.plans-page .card-container .card {
+  border: 1.5px solid var(--Cool-gray);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: fit-content;
+}
+
+.plans-page .card-container .card:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.plans-page .card-container .card .icon {
+  margin-bottom: 40px;
+}
+
+.plans-page .card-container .card .title {
+  font-family: ubuntu-med;
+}
+
+.plan-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ubuntu-med;
+  color: var(--Cool-gray);
+}
+
+/* toggle button */
+.toggle-btn {
+  background-color: var(--Marine-blue);
+  width: 35px;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 1px 0 1px;
+  margin: 0 10px 0 10px;
+}
+
+span.circle {
+  display: block;
+  background-color: var(--White);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+}

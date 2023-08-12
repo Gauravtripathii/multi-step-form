@@ -32,3 +32,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  display: inherit;
+  color: inherit;
+  border: inherit;
+  text-decoration: none;
+}

@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.nav .nav-btn > span {
+.nav .nav-btn .number {
   /* background-color: var(--Light-blue); */
   border: 2px solid var(--White);
   width: 40px;
@@ -38,4 +38,9 @@
 .nav .txt {
   display: flex;
   flex-direction: column;
+}
+
+.nav .active .number {
+  background-color: var(--Light-blue);
+  color: var(--Marine-blue);
 }

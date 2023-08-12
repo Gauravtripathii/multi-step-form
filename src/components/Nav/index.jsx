@@ -1,36 +1,46 @@
 import React from "react";
 import "./main.css";
 
+import { NavLink } from "react-router-dom";
+
 function Nav() {
   return (
     <div className="nav">
       <div className="nav-btn">
-        <span>1</span>
-        <div className="txt">
-          <span className="step">Step 1</span>
-          <span>YOUR INFO</span>
-        </div>
+        <NavLink to="/">
+          <span className="number">1</span>
+          <div className="txt">
+            <span className="step">Step 1</span>
+            <span>YOUR INFO</span>
+          </div>
+        </NavLink>
       </div>
       <div className="nav-btn">
-        <span>2</span>
-        <div className="txt">
-          <span className="step">Step 2</span>
-          <span>SELECT PLAN</span>
-        </div>
+        <NavLink to="/plans">
+          <span className="number">2</span>
+          <div className="txt">
+            <span className="step">Step 2</span>
+            <span>SELECT PLAN</span>
+          </div>
+        </NavLink>
       </div>
       <div className="nav-btn">
-        <span>3</span>
-        <div className="txt">
-          <span className="step">Step 3</span>
-          <span>ADD-ONS</span>
-        </div>
+        <NavLink to="/add-ons">
+          <span className="number">3</span>
+          <div className="txt">
+            <span className="step">Step 3</span>
+            <span>ADD-ONS</span>
+          </div>
+        </NavLink>
       </div>
       <div className="nav-btn">
-        <span>4</span>
-        <div className="txt">
-          <span className="step">Step 4</span>
-          <span>SUMMARY</span>
-        </div>
+        <NavLink to="/summary">
+          <span className="number">4</span>
+          <div className="txt">
+            <span className="step">Step 4</span>
+            <span>SUMMARY</span>
+          </div>
+        </NavLink>
       </div>
     </div>
   );

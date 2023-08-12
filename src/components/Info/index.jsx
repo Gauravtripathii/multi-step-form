@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./main.css";
 
+import { useNavigate } from "react-router-dom";
+
 function Info() {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [number, setNumber] = useState();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    console.log(name, email, number);
+    if (name && email && number) navigate("/plans");
+  };
+
   return (
     <div className="info-page inner-content">
       <div>
@@ -12,20 +24,35 @@ function Info() {
         <div className="input-box-c">
           <div>
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder="e.g. Yuval Harari" required />
+            <input
+              type="text"
+              placeholder="e.g. Yuval Harari"
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </div>
           <div>
             <label htmlFor="name">Email Address</label>
-            <input type="text" placeholder="e.g. yuvalharari@noah.com" required />
+            <input
+              type="text"
+              placeholder="e.g. yuvalharari@noah.com"
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
           <div>
             <label htmlFor="name">Phone Number</label>
-            <input type="text" placeholder="e.g. +91 9220520220" required />
+            <input
+              type="text"
+              placeholder="e.g. +91 9220520220"
+              onChange={(e) => setNumber(e.target.value)}
+              required
+            />
           </div>
         </div>
 
         <div className="button">
-          <button>Next Step</button>
+          <button onClick={handleClick}>Next Step</button>
         </div>
       </form>
     </div>

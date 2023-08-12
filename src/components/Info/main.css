@@ -1,3 +1,55 @@
 .info-page {
-  border: 2px solid red;
+  color: var(--Marine-blue);
+  padding-top: 50px;
 }
+
+.info-page h1 {
+  font-family: ubuntu-bold;
+}
+
+.info-page p {
+  color: var(--Cool-gray);
+  font-family: ubuntu-reg;
+}
+.info-page > div {
+  height: 20%;
+}
+
+.info-page > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.info-page .input-box-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%;
+}
+
+.info-page form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-page form label {
+  font-family: ubuntu-reg;
+}
+
+.info-page form input {
+  font-family: ubuntu-med;
+  color: inherit;
+  height: 50px;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.info-page form input:focus {
+  outline: 2px solid var(--Marine-blue);
+}
+
+

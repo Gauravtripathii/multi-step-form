@@ -40,5 +40,24 @@ a {
   text-decoration: none;
 }
 
+.button {
+  display: flex;
+  align-items: flex-end;
+}
+.button button {
+  font-size: 16px;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  font-family: ubuntu-med;
+  width: fit-content;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button button:hover {
+  background-color: hsla(213, 96%, 18%, 0.886);
+}
+
 /* - Mobile: 375px
 - Desktop: 1440px */

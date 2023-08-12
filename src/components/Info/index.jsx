@@ -1,9 +1,10 @@
 import React from "react";
+import "./main.css";
 
 function Info() {
   return (
-    <div>
-      <h1>info</h1>
+    <div className="info-page inner-content">
+      <h1>Personal info</h1>
     </div>
   );
 }

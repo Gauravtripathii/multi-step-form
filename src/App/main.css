@@ -4,3 +4,15 @@
   padding: 20px;
   display: flex;
 }
+
+.form-container {
+  border: 2px solid blue;
+  width: 75%;
+  display: grid;
+  place-items: center;
+}
+
+.inner-content {
+  width: 80%;
+  height: 80%;
+}

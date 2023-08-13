@@ -59,5 +59,25 @@ a {
   background-color: hsla(213, 96%, 18%, 0.886);
 }
 
+.go-back {
+  display: flex;
+  align-items: flex-end;
+}
+.go-back button {
+  font-size: 16px;
+  color: var(--Cool-gray);
+  background: var(--White);
+  font-family: ubuntu-med;
+  width: fit-content;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid var(--White);
+  cursor: pointer;
+}
+.go-back button:hover {
+  border-color: var(--Cool-gray);
+}
+
 /* - Mobile: 375px
 - Desktop: 1440px */

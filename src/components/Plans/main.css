@@ -20,6 +20,7 @@
 
 .plans-page .card-container {
   display: flex;
+  height: 40%;
 }
 
 .plans-page .card-container .card {
@@ -42,8 +43,28 @@
   margin-bottom: 40px;
 }
 
+.plans-page .card-container .card .details {
+  display: flex;
+  flex-direction: column;
+}
+
 .plans-page .card-container .card .title {
   font-family: ubuntu-med;
+}
+
+.plans-page .card-container .card .cost {
+  color: var(--Cool-gray);
+  font-family: ubuntu-reg;
+}
+
+.plans-page .card-container .card footer {
+  font-family: ubuntu-reg;
+}
+
+.plans-page footer {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
 }
 
 .plan-type {

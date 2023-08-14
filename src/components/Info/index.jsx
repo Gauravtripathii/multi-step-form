@@ -3,14 +3,14 @@ import "./main.css";
 
 import { useNavigate } from "react-router-dom";
 
-function Info() {
+function Info({callback}) {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [number, setNumber] = useState();
   const navigate = useNavigate();
 
   const handleClick = () => {
-    console.log(name, email, number);
+    callback({name, email, number});
     if (name && email && number) navigate("/plans");
   };
 

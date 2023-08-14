@@ -1,0 +1,49 @@
+.add-ons {
+  color: var(--Marine-blue);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.add-ons h1 {
+  font-family: ubuntu-bold;
+}
+
+.add-ons p {
+  color: var(--Cool-gray);
+  font-family: ubuntu-reg;
+}
+
+.add-ons footer {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.add-ons .select-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+}
+
+.add-ons .select-container .select {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 1.5px solid var(--Cool-gray);
+  border-radius: 10px;
+}
+
+.add-ons .select-container .select:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.add-ons .select-container .select span {
+  font-family: ubuntu-med;
+}
+
+.add-ons .select-container .select .checkbox-details {
+  width: 80%;
+}

@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router-dom";
 
 import Info from "../components/Info";
 import Plans from "../components/Plans";
+import AddOns from "../components/AddOns";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Info />} />
           <Route path="/plans" element={<Plans />} />
+          <Route path="/add-ons" element={<AddOns />} />
         </Routes>
       </div>
     </div>

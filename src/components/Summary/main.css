@@ -74,3 +74,28 @@
 .summary .total h2 {
   font-family: ubuntu-bold;
 }
+
+@media only screen and (max-width: 375px) {
+  .summary h1 {
+    margin-bottom: 10px;
+  }
+
+  .summary footer {
+    margin-top: 30px;
+  }
+
+  .summary .details {
+    margin-top: 20px;
+  }
+
+  .summary .details .plan {
+    padding-bottom: 20px;
+  }
+  .summary .total {
+    margin-top: 20px;
+  }
+  
+  .summary .details .addons p {
+    margin: 10px 0 10px 0;
+  }
+}

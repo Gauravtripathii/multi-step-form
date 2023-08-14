@@ -52,4 +52,24 @@
   outline: 2px solid var(--Marine-blue);
 }
 
+@media only screen and (max-width: 375px) {
+  .info-page h1 {
+    margin-bottom: 10px;
+  }
 
+  .info-page p {
+    margin-bottom: 10px;
+  }
+
+  .info-page .input-box-c {
+    margin-bottom: 10px;
+  }
+
+  .info-page form label {
+    margin-bottom: 10px;
+  }
+
+  .info-page form input {
+    margin-bottom: 10px;
+  }
+}

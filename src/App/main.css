@@ -9,6 +9,7 @@
   width: 75%;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 .inner-content {
@@ -20,16 +21,21 @@
   .app {
     padding: 0;
     flex-direction: column;
+    align-items: center;
   }
   
   .form-container {
-    width: 75%;
-    display: grid;
-    place-items: center;
+    width: 90%;
   }
-  
+
   .inner-content {
-    width: 80%;
-    height: 100%;
+    padding: 20px 10px 20px 10px;
+    background: var(--White);
+    border-radius: 15px;
+    box-shadow: 0 0 2px #000;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: -50px;
   }
 }

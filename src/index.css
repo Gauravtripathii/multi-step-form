@@ -56,7 +56,7 @@ a {
   cursor: pointer;
 }
 .button button:hover {
-  background-color: hsla(213, 96%, 18%, 0.886);
+  background-color: var(--Purplish-blue);
 }
 
 .go-back {

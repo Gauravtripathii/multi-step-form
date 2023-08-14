@@ -1,0 +1,76 @@
+.summary {
+  color: var(--Marine-blue);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary h1 {
+  font-family: ubuntu-bold;
+}
+
+.summary p {
+  color: var(--Cool-gray);
+  font-family: ubuntu-reg;
+}
+
+.summary footer {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.summary .details {
+  height: 60%;
+}
+
+.summary .details .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--Cool-gray);
+  padding-bottom: 40px;
+}
+
+.summary .details .plan > div {
+  text-transform: capitalize;
+  font-family: ubuntu-med;
+}
+
+/* .summary .details .plan > div span {
+} */
+
+.summary .details .plan > div a {
+  text-decoration: underline;
+  color: var(--Light-gray);
+}
+
+.summary .details .plan > div a:hover {
+  color: var(--Purplish-blue);
+}
+
+.summary .details .addons {
+  font-family: ubuntu-med;
+}
+
+.summary .details .addons p {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+
+.summary .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.summary .total span {
+  font-family: ubuntu-med;
+  color: var(--Cool-gray);
+}
+
+.summary .total h2 {
+  font-family: ubuntu-bold;
+}

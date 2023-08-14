@@ -12,7 +12,7 @@
   margin: 20px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1062px) {
   .thank-you {
     top: 50%;
     transform: translate(0, 50%);

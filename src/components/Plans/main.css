@@ -97,7 +97,7 @@ span.circle {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 375px) {  
+@media only screen and (max-width: 1062px) {  
   .plans-page h1 {
     margin-bottom: 10px;
   }

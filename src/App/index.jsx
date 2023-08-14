@@ -17,13 +17,17 @@ function App() {
     console.log(basicInfo);
   }, [basicInfo]);
 
+  useEffect(()=>{
+    console.log(plan);
+  }, [plan]);
+
   return (
     <div className="app">
       <Nav />
       <div className="form-container">
         <Routes>
           <Route path="/" element={<Info callback={setBasicInfo} />} />
-          <Route path="/plans" element={<Plans />} />
+          <Route path="/plans" element={<Plans callback={setPlan} />} />
           <Route path="/add-ons" element={<AddOns />} />
         </Routes>
       </div>

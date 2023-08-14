@@ -7,7 +7,7 @@ import arcade_icon from "../../assets/images/icon-arcade.svg";
 import advanced_icon from "../../assets/images/icon-advanced.svg";
 import pro_icon from "../../assets/images/icon-pro.svg";
 
-function Plans() {
+function Plans({callback}) {
   const [toggle, setToggle] = useState(0);
   const toggleMonthlyText = useRef();
   const toggleYearlyText = useRef();
@@ -64,6 +64,9 @@ function Plans() {
   }, [toggle, plan]);
 
   const handleNext = () => {
+    let c;
+    (toggle%2!==0)? c = "yearly" : c = "monthly";
+    callback({planType: plan, charge: c})
     if (plan) navigate("/add-ons");
   };
   const handleBack = () => {

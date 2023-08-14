@@ -47,7 +47,7 @@ function Summary({ plan, addOns }) {
             <span>
               {plan.planType} ({plan.charge})
             </span>
-            <NavLink>Change</NavLink>
+            <NavLink to="/plan">Change</NavLink>
           </div>
           <div>
             <span>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./main.css";
 
@@ -8,6 +9,8 @@ function Summary({ plan, addOns }) {
   const [lsCharge, setLsCharge] = useState(0);
   const [cpCharge, setCpCharge] = useState(0);
   const [total, setTotal] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (plan.planType === "arcade") {
@@ -29,7 +32,7 @@ function Summary({ plan, addOns }) {
       if (plan.charge === "yearly") setLsCharge(20);
       else setLsCharge(2);
     }
-    if(addOns.customProfile) {
+    if (addOns.customProfile) {
       if (plan.charge === "yearly") setCpCharge(20);
       else setCpCharge(2);
     }
@@ -90,17 +93,19 @@ function Summary({ plan, addOns }) {
           )}
         </div>
         <div className="total">
-            <span>Total(per {plan.charge === "yearly" ? "year" : "month"})</span>
-            <h2>${total}/{plan.charge === "yearly" ? "yr" : "mo"}</h2>
+          <span>Total(per {plan.charge === "yearly" ? "year" : "month"})</span>
+          <h2>
+            ${total}/{plan.charge === "yearly" ? "yr" : "mo"}
+          </h2>
         </div>
       </div>
 
       <footer>
         <div className="go-back">
-          <button>Go Back</button>
+          <button onClick={() => navigate("/add-ons")}>Go Back</button>
         </div>
         <div className="button">
-          <button>Confirm</button>
+          <button onClick={() => navigate("/thank-you")}>Confirm</button>
         </div>
       </footer>
     </div>

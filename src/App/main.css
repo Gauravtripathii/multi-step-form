@@ -29,7 +29,7 @@
   }
 
   .inner-content {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px !important;
     background: var(--White);
     border-radius: 15px;
     box-shadow: 0 0 2px #000;

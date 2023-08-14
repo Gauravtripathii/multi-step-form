@@ -32,7 +32,7 @@
 }
 
 .nav .step {
-    color: var(--Light-gray);
+  color: var(--Light-gray);
 }
 
 .nav .txt {
@@ -43,4 +43,41 @@
 .nav .active .number {
   background-color: var(--Light-blue);
   color: var(--Marine-blue);
+}
+
+@media only screen and (max-width: 375px) {
+  .nav {
+    width: 100%;
+    height: 20%;
+    padding: 40px;
+    flex-direction: row;
+    background: url(../../assets/images/bg-sidebar-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav .nav-btn {
+    margin: 0;
+  }
+
+  .nav .nav-btn .number {
+    margin: 5px;
+  }
+
+  .nav .step {
+    display: none;
+  }
+
+  .nav .txt {
+    display: none;
+  }
+
+  .nav .active .number {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+  }
 }

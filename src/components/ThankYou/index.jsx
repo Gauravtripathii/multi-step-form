@@ -7,7 +7,7 @@ function ThankYou() {
   return (
     <div className="thank-you inner-content">
       <div className="image">
-        <img src={image} alt="thank you image" />
+        <img src={image} alt="thank you" />
       </div>
       <h1>Thank You</h1>
     </div>

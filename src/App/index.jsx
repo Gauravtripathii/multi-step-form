@@ -9,6 +9,7 @@ import Info from "../components/Info";
 import Plans from "../components/Plans";
 import AddOns from "../components/AddOns";
 import Summary from "../components/Summary";
+import ThankYou from "../components/ThankYou";
 
 function App() {
   const [basicInfo, setBasicInfo] = useState({
@@ -44,6 +45,7 @@ function App() {
           <Route path="/plans" element={<Plans callback={setPlan} />} />
           <Route path="/add-ons" element={<AddOns charge={plan.charge} callback={setAddOns} />} />
           <Route path="/summary" element={<Summary plan={plan} addOns={addOns} />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </div>
     </div>

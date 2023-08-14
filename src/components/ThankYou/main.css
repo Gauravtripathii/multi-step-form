@@ -1,0 +1,13 @@
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you h1 {
+  font-family: ubuntu-bold;
+  color: var(--Marine-blue);
+  font-size: 60px;
+  margin: 20px;
+}
